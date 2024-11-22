@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #3f3320; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: izquierda, centro, derecha */
+    grid-template-rows: auto 100%; /* Dos filas: cabecera y contenido principal */
+    gap: 5px; /* Espacio entre los elementos */
+    font-family: Arial, sans-serif;
+    
+}
+
+#header {
+    grid-column: 1 / 4; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #141312; 
+    border: 4px solid #272523;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#header a {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+#header a:hover {
+    background-color: #6f4e37; /* Color marrón claro */
+}
+
+.cookie {
+    grid-column: 1; /* Primera columna */
+    background-color: rgb(75, 75, 212);
+    padding: 10px;
+    border: 2px solid #4b3621;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.buildings {
+    grid-column: 2; /* Segunda columna */
+    background-color: black;
+    border: 2px solid #4b3621;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shopBuildings {
+    grid-column: 3; /* Tercera columna */
+    background-color: rgb(75, 75, 212); 
+    padding: 10px;
+    border: 2px solid #4b3621;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info {
+    background-color: rgb(75, 75, 212);
+    border-radius: 5px; 
+    padding: 10px;
+    height: 15%;
+    margin: 0;
+    
+}
+
+.linkBox {
+    padding: 10px;
+    background-color: #3f3320;
+    border: 1px solid #3f3320; /* Agrego 'solid' para evitar problemas con bordes */
+    border-radius: 10%;
+    overflow: hidden; /* Limpia los flotantes automáticamente */
+}
+
+.info a {
+    color: grey;
+    display: block; /* Convierte los enlaces en elementos de bloque */
+    text-decoration: none; /* Elimina subrayado */
+    margin: 5px 0; /* Espaciado vertical entre los enlaces */
+}
